@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Add Employee</title>
+    </head>
+    <body>
+        <center><h1>Add Employee</h1>
+        <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="Submit">Save</button>
+        </form></center>
+    </body>
+</html>
